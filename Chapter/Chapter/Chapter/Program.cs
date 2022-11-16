@@ -8,7 +8,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 
 builder.Services.AddScoped<ChapterContext, ChapterContext>();
-builder.Services.AddScoped<LivroRepository, LivroRepository>(); 
+builder.Services.AddTransient<LivroRepository, LivroRepository>();
+builder.Services.AddTransient<UsuarioRepository, UsuarioRepository>();
 
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
