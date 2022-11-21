@@ -36,6 +36,11 @@ namespace Chapter.Controllers
             }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpGet("{id}")]
         public IActionResult BuscarPorId(int id)
         {
@@ -47,6 +52,56 @@ namespace Chapter.Controllers
                     return NotFound();
                 }
                 return Ok(usuarioEncontrado);
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="usuario"></param>
+        /// <returns></returns>
+
+        [HttpPost]
+        public IActionResult Cadastrar(Usuario usuario)
+        {
+            try
+            {
+                _iusuarioRepository.Cadastrar(usuario);
+                return StatusCode(201);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+        [HttpPut("{id}")]
+        public IActionResult Alterar(int id, Usuario usuario)
+        {
+            try
+            {
+                _iusuarioRepository.Atualizar(id, usuario);
+                return Ok("Usuário alterado");
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+        [HttpDelete("{id}")]
+        public IActionResult Deletar(int id)
+        {
+            try
+            {
+                _iusuarioRepository.Deletar(id);
+                return Ok("Usuário deletado");
             }
             catch (Exception)
             {

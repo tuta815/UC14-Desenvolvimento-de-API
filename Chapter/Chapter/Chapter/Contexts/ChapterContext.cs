@@ -5,12 +5,8 @@ namespace Chapter.Contexts
 {
     public class ChapterContext: DbContext
     {
-        public ChapterContext()
-        {
-        }
-        public ChapterContext(DbContextOptions<ChapterContext> options):base(options)
-        {
-        }
+        public ChapterContext(){}
+        public ChapterContext(DbContextOptions<ChapterContext> options): base(options){}
 
         //vamos utilizar esse método para configurar o banco de dados
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -23,7 +19,7 @@ namespace Chapter.Contexts
         }
 
         //dbset representa as entidades que serão utilizadas nas operações de leitura, criação, atualização e exclusão.
-        public DbSet<Livro> Livros { get; set; }
+        public DbSet<Livro>? Livros { get; set; }
 
         public DbSet<Usuario> Usuarios { get; set; }
     }

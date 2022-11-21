@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\arthu\\Desktop\\curso fullstack\\UC14 - DESENVOLVIMENTO DE APIs\\Chapter\\Chapter\\Chapter\\Chapter.csproj": {}
+    "C:\\GitHub\\UC14-Desenvolvimento-de-API\\Chapter\\Chapter\\Chapter\\Chapter.csproj": {}
   },
   "projects": {
-    "C:\\Users\\arthu\\Desktop\\curso fullstack\\UC14 - DESENVOLVIMENTO DE APIs\\Chapter\\Chapter\\Chapter\\Chapter.csproj": {
+    "C:\\GitHub\\UC14-Desenvolvimento-de-API\\Chapter\\Chapter\\Chapter\\Chapter.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\arthu\\Desktop\\curso fullstack\\UC14 - DESENVOLVIMENTO DE APIs\\Chapter\\Chapter\\Chapter\\Chapter.csproj",
+        "projectUniqueName": "C:\\GitHub\\UC14-Desenvolvimento-de-API\\Chapter\\Chapter\\Chapter\\Chapter.csproj",
         "projectName": "Chapter",
-        "projectPath": "C:\\Users\\arthu\\Desktop\\curso fullstack\\UC14 - DESENVOLVIMENTO DE APIs\\Chapter\\Chapter\\Chapter\\Chapter.csproj",
+        "projectPath": "C:\\GitHub\\UC14-Desenvolvimento-de-API\\Chapter\\Chapter\\Chapter\\Chapter.csproj",
         "packagesPath": "C:\\Users\\arthu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\arthu\\Desktop\\curso fullstack\\UC14 - DESENVOLVIMENTO DE APIs\\Chapter\\Chapter\\Chapter\\obj\\",
+        "outputPath": "C:\\GitHub\\UC14-Desenvolvimento-de-API\\Chapter\\Chapter\\Chapter\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\arthu\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,13 +40,17 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.11, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[6.0.9, )"
+              "version": "[6.0.11, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[6.2.3, )"
+              "version": "[6.4.0, )"
             }
           },
           "imports": [

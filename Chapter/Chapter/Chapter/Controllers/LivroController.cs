@@ -30,6 +30,8 @@ namespace Chapter.Controllers
             }
         }
 
+
+
         [HttpGet("{id}")]
         public IActionResult BuscarPorId(int id)
         {
