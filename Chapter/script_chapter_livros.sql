@@ -15,3 +15,4 @@ INSERT INTO Livros (Titulo, QuantidadePaginas, Disponivel)
 VALUES ('Titulo B', 220, 0);
 
 SELECT * FROM Livros;
+SELECT * FROM Usuarios;
